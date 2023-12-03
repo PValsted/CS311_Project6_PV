@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Balance Sheet Calculator</title>
+    <link rel="stylesheet" href="css/properties.css"/>
+  </head>
+
+  <body>
+        <div class="header" id="header">
+            <h1><strong>Bellarmine Financials - Balance Sheet Calculator</strong></h1>
+        </div>
+
+        <div class="content" id="content">
+            <div class="grid-container">
+                <div class="grid-item" id="grid-item-1">
+                    <h3><strong>Assets</strong></h3>
+                </div>
+
+                <div class="grid-item" id="grid-item-2">
+                    <h3><strong>Liabilities</strong></h3>
+                </div>
+
+                <div class="grid-item" id="grid-item-3">
+                    Current Assets 
+                    <button class="add-button" id="add-current-assets" onclick="addAssets()"><strong>Add Current Assets</strong></button>
+                </div>
+
+                <div class="grid-item" id="grid-item-4">
+                    Current Liabilities
+                    <button class="add-button" id="add-current-liabilities" onclick="addLiabilities()"><strong>Add Current Liabilities</strong></button>
+                </div>
+
+                <div class="grid-item" id="grid-item-5">
+                    Investment Property & Equipment
+                    <button class="add-button" id="add-investment" onclick="addInvestment()"><strong>Add Investment Property and Equipment</strong></button>
+                </div>
+
+                <div class="grid-item" id="grid-item-6">
+                    Long-Term Liabilities
+                    <button class="add-button" id="add-long-term-liabilities" onclick="addLongTerm()"><strong>Add Long-Term Liabilities</strong></button>
+                </div>
+
+                <div class="grid-item" id="grid-item-7">
+                    Intangibles
+                    <button class="add-button" id="add-intangibles" onclick="addIntangibles()"><strong>Add Intangibles</strong></button>
+                </div>
+
+                <div class="grid-item" id="grid-item-8">
+                    <p style="font-size: larger">Total Position<p>
+                    <div id="finalButton"></div>
+                    <p id="total-assets">Total Assets: </p>
+                    <p id="total-liabilities">Total Liabilities: </p>
+                    <p id="position">Position: </p>
+
+                </div>
+
+              </div>
+
+        </div>
+
+
+        <div class="footer" id="footer">
+            <p>© Bellarmine University 2023</p>
+        </div>
+
+        <script src="js/properties.js"></script>
+  </body>
+
+
+</html>
